@@ -1,17 +1,43 @@
-# List Processing - Find None Position
+# Python Data Experiments
 
-This script checks a list for missing values (`None`) and prints the 0-based index/position where the first one is found.
+A collection of small Python scripts I wrote while learning programming basics and data cleaning techniques — the foundation for data engineering.
 
-## What it does
-- Loops through a list of names
-- Counts positions manually
-- Prints the position if `None` is found, or a message if none exist
-- Uses `for-else` to handle the "no match" case
+## About This Repo
 
-## Code file
-`find_none_position.py`
+These are my early exercises and experiments as I teach myself Python with a focus on handling real-world messy data (something data engineers deal with every day).
 
-## Example run
-```python
-names = ['Kamara', 'Tuba', 'Mounika', None]
-# Output: Empty space found in position: 3
+Started in February 2026 as part of self-study before university.  
+Goal: Build practical skills step-by-step (string parsing → list processing → eventually pandas, ETL, APIs, pipelines).
+
+## What's Inside
+
+### string-parsing
+Extracting structured data (name, role, age) from inconsistent, messy strings with extra spaces, typos, symbols, and varying formats.
+
+- Learned: `.find()`, `.strip()`, `.lower()`, `.replace()`, dynamic slicing instead of hard-coded positions
+
+### list-processing
+Finding missing values (`None`) in lists and reporting their 0-based position.
+
+- Learned: for loops, conditionals, manual indexing, `for ... else` pattern, `is None` checks
+
+## Why I'm Doing This
+
+I want to become a data engineer, so I'm starting with the fundamentals:  
+- Cleaning dirty data  
+- Writing reusable logic  
+- Understanding how to make code work on unpredictable inputs
+
+Future plans:  
+- Add pandas data cleaning scripts  
+- Simple ETL (API → clean → save to file/DB)  
+- Basic Spark/PySpark exercises  
+- Mini data pipelines
+
+## Tech Used So Far
+- Python 3 (core language only — no external libraries yet)
+
+## How to Run
+Just open any .py file and run it:
+```bash
+python string-parsing/exercise_1.py
